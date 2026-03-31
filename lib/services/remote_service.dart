@@ -2,7 +2,7 @@ import 'package:rest_api/models/post.dart';
 import 'package:http/http.dart' as http;
 
 class RemoteService {
-  Future<List<Post>?> getPost() async {
+  Future<List<Post>?> getPosts() async {
     var client = http.Client();
 
     var uri = Uri.parse(
